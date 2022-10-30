@@ -1,0 +1,70 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  --dominant:#fff7ab; /* Quote background */
+}
+
+body {
+  width: 18.75rem;
+  height: 18.75rem;
+  background-color: #fffce8; /* box background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p#quoteDisplayer {
+  display: flex;
+  margin: 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  /*border: 3px solid rgb(255, 179, 15); */
+  padding: 0.625rem;
+  transition: all 200ms ease-in;
+  background-color: var(--dominant);
+  cursor: pointer;
+}
+
+button#btn {
+    display: flex;
+    margin-top: 2%;
+    margin: auto 0.625rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 3px solid #fab716; /* Quote border box */
+    padding: 0.625rem;
+    transition: all 200ms ease-in;
+    background-color: var(--dominant);
+    cursor: pointer;
+  }
+
+button#generateQuote {
+  height: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  margin-bottom: 0.625rem;
+}
+
+button#generateQuote:hover {
+  transform: translateY(-1.2px);
+}
+
+button#generateQuote:active {
+  transform: translateY(0);
+}
+
+div#output {
+    font-size: small;
+    margin: 1%;
+}
